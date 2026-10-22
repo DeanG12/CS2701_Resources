@@ -20,31 +20,51 @@
             <!-- Check Week 4 Lecture to learn about HTML5 semantic elements-->
             <aside>
             </aside>
-            <section>
-                <form class="center" novalidate>
-                <!-- ToDo: Implement the form containing 
-                           Name - type text
-                           email- type text
-                           password - type text
-                           Terms of Service - type checkbox
-                           Register - button
-                           Learn more - link
-                           Check lecture slides and the links on the slides to learn about forms
-                           and how to create a button that would react to a click Event
-                        -->
-                    <!-- Example given for user type checkboxes-->
-                    
-                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
-                    <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
-                    <input type="checkbox" id="seller" name="seller" value="seller">
-                    <label for="seller">I want to sell produce from my allotment.</label><br><br>
+            
 
-                    <br><br>
-                </form>
-                <div class="center" id="hiddenSection">
-                    <p id="hiddenParagraph"></p>
-                </div>
-            </section>
+
+            <form class="center" novalidate>
+    <label for="name">Name:</label>
+    <input class="textInput" type="text" id="name" name="name">
+    <br>
+
+    <label for="email">Email:</label>
+    <input class="textInput" type="text" id="email" name="email">
+    <br>
+
+    <label for="password">Password:</label>
+    <input class="textInput" type="password" id="password" name="password">
+    <br>
+
+    <label for="confirmPassword">Re-type password:</label>
+    <input class="textInput" type="password"
+           id="confirmPassword" name="confirmPassword">
+    <br>
+
+    <input type="checkbox" id="buyer" name="buyer" value="buyer">
+    <label for="buyer">I want to buy produce directly from allotment owners.</label>
+    <br>
+
+    <input type="checkbox" id="seller" name="seller" value="seller">
+    <label for="seller">I want to sell produce from my allotment.</label>
+    <br><br>
+
+    <input type="checkbox" id="terms" name="terms">
+    <label for="terms">
+        I agree to the <a href="terms.html">Terms of Use</a>
+        and <a href="privacy.html">Privacy Policy</a>.
+    </label>
+    <br><br>
+
+    <button type="button"
+            onclick="document.getElementById('hiddenParagraph').textContent = 'Register button clicked.';">
+        Register
+    </button>
+    <a href="help.html">Learn more</a>
+</form>
+
+
+
         </main>
     </body>
 </html>
